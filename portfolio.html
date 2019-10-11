@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <title>D'Angelo Guiton | Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="content-filter-script.js"></script>
+    <script src="slideshow-script.js"></script>
+</head>
+
+<div class="bgimg-2">
+    <div class="topNav" id="topNav">
+        <b>D'Angelo Guiton</b>
+        <a href="index.html">HOME</a>
+        <a class="active" href="portfolio.html">PORTFOLIO</a>
+        <a href="index.html#about_me">ABOUT ME</a>
+    </div>
+
+
+
+    <div class="large-content-holder">
+
+        <h2>Projects</h2>
+        <div id="myBtnContainer">
+            <button class="content-filter-button filtered" onclick="filterSelection('all')">Show all</button>
+            <button class="content-filter-button" onclick="filterSelection('Software')">Software</button>
+            <button class="content-filter-button" onclick="filterSelection('3D-Art')">3D Art</button>
+            <button class="content-filter-button" onclick="filterSelection('2D-Art')">2D Art</button>
+        </div>
+
+
+        <div class="row">
+            <div class="slideshow-column">
+                <div class="slideshow-container">
+                    <div class="mySlides fade" id="gwen">
+                        <img class="slideshow-image" src="Content/ChibiSpiderGwen.png">
+                        <h2>Gwen</h2>
+                    </div>
+
+                    <div class="mySlides fade" id="gwen-animation">
+                        <video class="slideshow-video" controls>
+                            <source src="Content/GwenAnimation(Audio).mp4" type="video/mp4">
+                            <source src="Content/GwenAnimation(Audio).ogg" type="video/ogg">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <h2>Gwen Animation</h2>
+                    </div>
+
+                    <div class="mySlides fade" id="swan">
+                        <img class="slideshow-image" src="Content/BlackSwan.gif">
+                        <h2>A Black Swan Animation</h2>
+                    </div>
+
+                    <div class="mySlides fade" id="omni">
+                        <img class="slideshow-image" src="Content/OmniBladeWoman.png">
+                        <h2>Omni-Blade Woman</h2>
+                    </div>
+
+                    <div class="mySlides fade" id="omni-animation">
+                        <video class="slideshow-video" controls>
+                            <source src="Content/OmniBladeWomanAnimation.mp4" type="video/mp4">
+                            <source src="Content/OmniBladeWomanAnimation.ogg" type="video/ogg">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <h2>Omni-Blade Woman Animation</h2>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="incrementSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="incrementSlides(1)">&#10095;</a>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="column 3D-Art">
+                <div class="card">
+                    <div class="container">
+                        <a href="#topNav">
+                            <div class="overlayimage-container" onclick="setSlide('gwen')">
+                                <img class="overlayimage" src="Content/ChibiSpiderGwen.png" alt="Chibi Spider Gwen"
+                                    style="width:100%">
+                                <div class="overlay">
+                                    <div class="text">Preview Project</div>
+                                </div>
+                            </div>
+                        </a>
+                        <h2>Gwen</h2>
+                        <p class="column-title">3D Art Project</p>
+                        <p>A miniature 3D Model of 'Spider Gwen' from 'Into The Spider Verse.' Modelled and rigged in
+                            Blender.</p>
+                        <p><button class="column-button" onclick="setSlide('gwen')"><i
+                                    class="fa fa-eye"></i>Preview</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column 3D-Art">
+                <div class="card">
+                    <div class="container">
+                        <a href="#topNav">
+                            <div class="overlayimage-container" onclick="setSlide('omni')">
+                                <img class="overlayimage" src="Content/OmniBladeWoman.png" alt="Chibi Spider Gwen"
+                                    style="width:100%">
+                                <div class="overlay">
+                                    <div class="text">Preview Project</div>
+                                </div>
+                            </div>
+                        </a>
+                        <h2>Omni-Blade Woman</h2>
+                        <p class="column-title">3D Art Project</p>
+                        <p>An originally-designed character used in a 2.5D Unity3D Platformer. Modelled, animated, and
+                            rigged in Blender.</p>
+                        <p><button class="column-button" onclick="setSlide('omni')"><i
+                                    class="fa fa-eye"></i>Preview</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column 3D-Art">
+                <div class="card">
+                    <div class="container">
+                        <a href="#topNav">
+                            <div class="overlayimage-container" onclick="setSlide('gwen-animation')">
+                                <img class="overlayimage" src="Content/GwenAnimationImage.png" alt="Chibi Spider Gwen"
+                                    style="width:100%">
+                                <div class="overlay">
+                                    <div class="text">Preview Project</div>
+                                </div>
+                            </div>
+                        </a>
+                        <h2>Gwen Animation</h2>
+                        <p class="column-title">3D Art Project</p>
+                        <p>An animated video of 'Gwen' cutting out the lights. Modelled, animated, and rigged in
+                            Blender.
+                        </p>
+                        <p><button class="column-button" onclick="setSlide('gwen-animation')"><i
+                                    class="fa fa-eye"></i>Preview</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column 3D-Art">
+                <div class="card">
+                    <div class="container">
+                        <a href="#topNav">
+                            <div class="overlayimage-container" onclick="setSlide('omni-animation')">
+                                <img class="overlayimage" src="Content/OmniBladeWomanAnimationImage.png"
+                                    style="width:100%">
+                                <div class="overlay">
+                                    <div class="text">Preview Project</div>
+                                </div>
+                            </div>
+                        </a>
+                        <h2>Omni-Blade Woman Animation</h2>
+                        <p class="column-title">3D Art Project</p>
+                        <p>An animated video used as a stress-test of the Omni-Blade Woman. Includes a short, but
+                            flashy, fight scene.</p>
+                        <p><button class="column-button" onclick="setSlide('omni-animation')"><i
+                                    class="fa fa-eye"></i>Preview</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column 2D-Art">
+                <div class="card">
+                    <div class="container">
+                        <a href="#topNav">
+                            <div class="overlayimage-container" onclick="setSlide('swan')">
+                                <img class="overlayimage" src="Content/BlackSwan.gif" alt="Chibi Spider Gwen"
+                                    style="width:100%">
+                                <div class="overlay">
+                                    <div class="text">Preview Project</div>
+                                </div>
+                            </div>
+                        </a>
+                        <h2>A Black Swan Animation</h2>
+                        <p class="column-title">2D Art Project</p>
+                        <p>A 'Black Swan' inspired animation project created using charcoal, gaphite, and photoshop.</p>
+                        <p><button class="column-button" onclick="setSlide('swan')"><i
+                                    class="fa fa-eye"></i>Preview</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column Software">
+                <div class="card">
+                    <div class="container">
+                        <img class="overlayimage" src="Content/UnityBoardGameDemoImage.png" style="width:100%">
+                        <h2>Unity Board Game Prototype</h2>
+                        <p class="column-title">Software</p>
+                        <p>An in-progress board game developed within the Unity3D engine using C#. Please Visit the
+                            Github Repository.</p>
+                        <p><a href="https://github.com/DYGuiton/Unity-Board-Game" target="_blank"><button
+                                    class="column-button"><i class="fa fa-download"></i>Github</button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</html>
